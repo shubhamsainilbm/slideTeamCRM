@@ -1,0 +1,82 @@
+[
+    {
+        "sr_no":"1",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Job Allocator",
+        "action": "Active"
+    },
+    {
+        "sr_no":"2",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"3",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"4",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"5",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"6",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"7",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"8",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"9",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    },
+    {
+        "sr_no":"10",
+        "name":"Worem ipsum dolor",
+        "mail_id": "abc32244@gmail.com",
+        "phone_num":"9066443322",
+        "role": "Author",
+        "action": "Inactive"
+    }
+]

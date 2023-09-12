@@ -1,0 +1,135 @@
+.all_user_sec {
+  background-color: var(--white);
+  .btn_edit {
+    @include blue-button;
+  }
+  .btn_reset {
+    @include blue-button;
+    background-color: transparent;
+    color: var(--blue);
+  }
+
+  .red_box {
+    background-color: var(--light-red);
+    color: var(--red);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 6px 13px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .all__user_link {
+    a {
+      color: var(--black);
+      font-size: var(--fs-20);
+      font-weight: 500;
+    }
+    span {
+      color: var(--blue);
+      font-size: var(--fs-19);
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    border-color: #f2f2f2;
+    border-width: 2px;
+    margin: 8px 0;
+  }
+  .cus_right_border {
+    border-right: 1px solid #f2f2f2;
+  }
+  .form__box {
+    label {
+      color: #413e3e;
+      font-size: var(--fs-15);
+      font-weight: 500;
+    }
+    .form-control {
+      color: #838383;
+      border: 1px solid #dbdbdb;
+      font-size: var(--fs-14);
+      min-height: 40px;
+      &:focus {
+        border-color: #dbdbdb;
+      }
+      &:disabled {
+        background-color: var(--white);
+        opacity: 1;
+      }
+    }
+  }
+
+  .user-profile {
+    .imgSpan {
+      text-align: center !important;
+      justify-content: center;
+      align-items: center;
+      background: #ededed;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    span {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+    .address_box {
+      color: var(--black);
+      font-size: 16px;
+      line-height: 22.7px;
+    }
+    .green_box {
+      background-color: var(--light-green);
+      color: var(--green);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 6px 13px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .inactive_btn {
+      background: var(--blue);
+      border: 1px solid var(--blue);
+      font-size: var(--fs-14);
+      color: var(--white);
+      font-weight: 500;
+      border-radius: 23px;
+    }
+    .active_btn {
+      background: #d9d9d9;
+      border: 1px solid #d9d9d9;
+      font-size: var(--fs-14);
+      color: var(--black);
+      font-weight: 500;
+      border-radius: 23px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .all_user_sec {
+    .all__user_link {
+      a,
+      span {
+        font-size: var(--fs-16);
+      }
+    }
+
+    .user-profile {
+      .address_box {
+        font-size: var(--fs-14);
+      }
+    }
+  }
+}

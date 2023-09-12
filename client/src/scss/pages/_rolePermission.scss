@@ -1,0 +1,39 @@
+.roles_permission_sec {
+    background-color: var(--white);
+
+    .head {
+        color: var(--blue);
+        font-size: var(--fs-22);
+        line-height: 32px;
+    }
+    hr{
+        border-color: #F2F2F2;
+    border-width: 2px;
+    // margin: 8px 0;
+    }
+    .filter_box{
+        span{
+            border-radius: 4px;
+            background: #E0E0E0;
+            color: var(--black);
+            font-size: var(--fs-14);
+            font-weight: 500;
+            padding: 8px 15px;
+            cursor: pointer;
+            &.active{
+                background-color: var(--blue);
+                color: var(--white);
+            }
+        }
+    }
+    .Permissions_table{
+        .btn_save{
+            @include blue-button
+        }
+        .btn_cancel{
+            @include blue-button;
+            background-color: transparent;
+            color: var(--blue);
+        }
+    }
+}

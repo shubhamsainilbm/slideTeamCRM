@@ -1,0 +1,85 @@
+.user_detail_sec {
+  background-color: var(--white);
+  h6 {
+    color: var(--blue);
+    font-size: var(--fs-20);
+    font-weight: 500;
+  }
+  .btn_add_user {
+    @include blue-button;
+  }
+  hr {
+    border-color: #f2f2f2;
+    border-width: 2px;
+    margin: 8px 0;
+  }
+  .table__head {
+    .form__box {
+      margin-bottom: 0px !important;
+    }
+    .user__filters {
+      position: relative;
+    }
+    .user__filters__checkbox {
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border-radius: var(--bs-border-radius);
+      margin-top: 10px !important;
+      right: 0px !important;
+      left: 0px !important;
+      border: 1px solid var(--bs-border-color);
+    }
+    .form-select {
+      --bs-form-select-bg-img: url("/images/icons/white-arrow.svg");
+      color: var(--white);
+      background-color: var(--blue);
+      font-size: var(--fs-14);
+      background-size: 12px 12px;
+      border: 1px solid var(--blue);
+      width: 100px;
+      option {
+        background-color: var(--white);
+        color: var(--black);
+      }
+    }
+    .btn_filter {
+      @include blue-button;
+      background: #e0e0e0;
+      border-color: #e0e0e0;
+      color: var(--black);
+    }
+    .search_box {
+      .input-group {
+        border-radius: 4px;
+        background: #ececec;
+        .form-control {
+          font-size: var(--fs-15);
+        }
+      }
+    }
+  }
+  table {
+    .green_box {
+      background-color: var(--light-green);
+      color: var(--green);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 6px 13px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .red_box {
+      background-color: var(--light-red);
+      color: var(--red);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 6px 13px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  }
+}

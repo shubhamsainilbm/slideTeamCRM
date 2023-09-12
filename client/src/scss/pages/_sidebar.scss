@@ -1,0 +1,149 @@
+
+
+.layout-sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    z-index: 9;
+    overflow-y: auto;
+    transition: transform 0.2s, left 0.2s;
+    background: var(--white);
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 0%);
+
+.sidebar {
+    // position: fixed;
+    // width: 250px;
+    // height: 100vh;
+    // z-index: 9;
+    // overflow-y: auto;
+    // transition: transform 0.2s, left 0.2s;
+    // background: var(--white);
+    // box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 0%);
+    overflow: hidden;
+
+
+    .sidebar__list {
+        margin-top: 120px;
+    }
+
+    .sidebar__list {
+        a {
+            color: var(--black);
+            font-size: var(--fs-16);
+            font-weight: 500;
+            line-height: 32px;
+
+            li {
+                padding: 8px 0;
+                display: inline-flex;
+                width: 100%;
+                white-space: nowrap;
+
+            }
+
+            svg {
+                fill: var(--black);
+                &.stroke_cls{
+                    stroke: var(--black);
+                    fill: none;
+                }
+            }
+            .accordion-item {
+                // color: var(--bs-accordion-color);
+                background-color: var(--light-blue);
+            }
+            
+            .accordion-button{
+                padding: 14px 11px 14px 0;
+                color: var(--black);
+                font-size: var(--fs-15);
+                font-weight: 500;
+                &:focus {
+                    box-shadow: none;
+                }
+                &:not(.collapsed){
+                    box-shadow: none;
+                    background-color: var(--light-blue);
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        background-color: var(--blue);
+                        height: 25px;
+                        width: 7px;
+                        border-radius: 5px;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                     box-shadow: none;
+                    &::after {
+                        margin-left: auto;
+                        content: "";
+                        background-image: url(/images/icons/accord-arrow1.svg);
+                        width: 13px;
+                        background-size: contain;
+                        height: 13px;
+                        margin-right: 10px;
+                }
+                }
+                &::after {
+                    margin-left: auto;
+                    content: "";
+                    background-image: url(/images/icons/accord-arrow.svg);
+                    width: 13px;
+                    background-size: contain;
+                    height: 13px;
+                    margin-right: 10px;
+            }
+        }
+           
+
+            &.active {
+                color: var(--blue);
+
+                svg {
+                    fill: var(--blue);
+                }
+
+                li {
+                    background-color: var(--light-blue);
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        background-color: var(--blue);
+                        height: 25px;
+                        width: 7px;
+                        border-radius: 5px;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+            }
+            .list_bullet{
+                svg{
+                    fill: var(--black);
+                }
+                &.active{
+                    svg{
+                        fill: var(--blue);
+                    }
+                    color: var(--blue);
+                }
+            }
+
+        }
+    }
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+    .layout-main-container {
+        margin-left: 0px !important;
+    }
+}

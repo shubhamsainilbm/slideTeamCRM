@@ -1,0 +1,257 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+  --blue: #28a6fa;
+  --light-blue: #e8f6ff;
+  --grey: #838383;
+  --light-grey: #8b909a;
+  --light-bg: #f2f1f2;
+  --green: #1d9013;
+  --light-green: #1d901329;
+  --red: #f21e1e;
+  --light-red: #f21e1e29;
+  --light-text: #413e3e;
+  --yellow:#ffbf00;
+  --text-grey:#666666;
+
+  --fs-8: 0.5rem;
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-17: 1.063rem;
+  --fs-18: 1.125rem;
+  --fs-19: 1.188rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-23: 1.4375rem;
+  --fs-24: 1.5rem;
+  --fs-25: 1.5625rem;
+  --fs-26: 1.625rem;
+  --fs-30: 1.875rem;
+  --fs-33: 2.0625rem;
+  --fs-35: 2.188rem;
+  --fs-40: 2.5rem;
+  --fs-45: 2.8125rem;
+  --fs-50: 3.125rem;
+  --fs-55: 3.438rem;
+}
+
+//BLUE BUTTON MIXIN
+@mixin blue-button {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  font-size: var(--fs-14);
+  font-weight: 500;
+  min-height: 38px;
+  border-radius: 4px;
+  padding: 0 22px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/font/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/font/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/font/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/font/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family: Poppins !important;
+}
+
+.select_box{
+  .form-select{
+    &:focus {
+      border-color: #dbdbdb;
+  }
+  }
+}
+
+.view_link{
+  background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 4px 13px;
+    font-size: 13px;
+}
+
+// Table Pagination SCSS START
+.pagination {
+  gap: 6px;
+
+  .page-link {
+    font-size: var(--fs-14) !important;
+    color: var(--grey) !important;
+    border: 1px solid #f1f2f6 !important;
+    border-radius: 4px !important;
+    background: #f1f2f6 !important;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.active > .page-link,
+.page-link.active {
+  color: var(--white) !important;
+  background-color: var(--blue) !important;
+  border-color: var(--blue) !important;
+}
+
+// Table Pagination SCSS END
+.table > :not(caption) > * > * {
+  padding: 11px 0.5rem !important;
+}
+table {
+  --bs-table-bg: transparent !important;
+  vertical-align: middle !important;
+  thead {
+    tr {
+      background: #7ccbff;
+      th {
+        white-space: nowrap;
+        color: var(--white) !important;
+        font-weight: 400;
+        font-size: var(--fs-15);
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      color: #23272e;
+      font-size: var(--fs-14);
+      font-weight: 400;
+      line-height: 22px;
+
+      td {
+        border: 1px solid #f2f2f2;
+      }
+    }
+  }
+  .form-check-input {
+    border: 2px solid var(--blue);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:checked[type="checkbox"] {
+      --bs-form-check-bg-image: none;
+    }
+    &:checked {
+      background-color: var(--blue);
+      border-color: var(--blue);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 2px solid var(--white);
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.table_pagination {
+  .select__box {
+    span {
+      color: var(--light-grey);
+      font-size: var(--fs-14);
+      font-weight: 500;
+      letter-spacing: 0.43px;
+      white-space: nowrap;
+    }
+
+    .form-select {
+      font-size: var(--fs-14);
+      font-weight: 500;
+      border-color: var(--blue);
+    }
+  }
+}
+
+.activeBar {
+  width: 50px !important;
+}
+
+.ShowBar {
+  width: 250px !important;
+}
+
+.marginBar {
+  margin-left: 50px !important;
+}
+
+.marginshow {
+  margin-left: 250px !important;
+}
+.transition {
+  transition: all 0.2s ease-in-out !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  table {
+    tbody {
+      tr {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .table > :not(caption) > * > * {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .table_pagination {
+    .select__box {
+      .form-select {
+        width: 70px;
+      }
+    }
+  }
+}
+
+.select__box {
+  font-size: var(--fs-15);
+  font-weight: 500;
+  span {
+    color: var(--light-grey);
+    font-size: var(--fs-14);
+    font-weight: 500;
+    letter-spacing: 0.43px;
+    white-space: nowrap;
+  }
+  .form-select {
+    font-size: var(--fs-14);
+    font-weight: 500;
+    border-color: var(--blue);
+    min-height: 40px;
+  }
+}
+
+

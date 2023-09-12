@@ -1,0 +1,184 @@
+.create_job__sec {
+  background-color: var(--white);
+  border-radius: 5px;
+
+  .table__job {
+    background-color: var(--white);
+    border-radius: 5px;
+
+    .table__head {
+      h6 {
+        color: var(--blue);
+        font-size: var(--fs-20);
+        font-weight: 500;
+      }
+
+      .btn_create {
+        @include blue-button;
+      }
+    }
+
+    .job_info_box {
+      border: 2px solid;
+      min-height: 115px;
+
+      h4 {
+        color: var(--black);
+        font-size: var(--fs-22);
+        font-weight: 500;
+      }
+
+      p {
+        color: var(--black);
+        font-size: var(--fs-15);
+      }
+    }
+  }
+  .table {
+    .green_box {
+      background-color: var(--light-green);
+      color: var(--green);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .red_box {
+      background-color: var(--light-red);
+      color: var(--red);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .blue_box {
+      background-color: var(--light-blue);
+      color: var(--blue);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+// ======================================================
+.create_job_offcanvas {
+  background-color: var(--white);
+
+  .offcanvas {
+    --bs-offcanvas-width: 480px;
+  }
+
+    .offcanvas-header {
+      h5{
+        color: var(--blue);
+    font-size: var(--fs-20);
+    font-weight: 500;
+      }
+    }
+    .btn-close {
+      position: absolute;
+      left: -40px;
+      background-color: var(--white);
+      opacity: 1;
+      padding: 10px 12px;
+      --bs-btn-close-bg: url(/images/icons/r-cross.svg);
+      top: 8px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      background-size: 16px;
+    }
+    .form__box {
+      .input-group {
+        border-radius: 6px;
+        border: 1px solid #dbdbdb;
+        background: var(--white);
+        padding: 2px;
+        .form-control {
+          font-size: var(--fs-14);
+          background-color: transparent;
+          border-color: transparent;
+        }
+        .input-group-text {
+          background-color: var(--blue);
+          cursor: pointer;
+        }
+      }
+      label {
+        color: var(--light-text);
+        font-size: var(--fs-15);
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+    .select__box {
+      .form-select {
+        min-height: 40px;
+        background-size: 30px 30px;
+        border-radius: 6px;
+        border: 1px solid #dbdbdb;
+        font-size: var(--fs-14);
+        --bs-form-select-bg-img: url(/images/icons/down-arrow.svg);
+      }
+      label {
+        color: var(--light-text);
+        font-size: var(--fs-15);
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+    .textarea.form-control {
+      height: 40px;
+    }
+    .btn_create {
+      @include blue-button;
+    }
+  }
+// ======================================================
+.create_job_sec{
+  background-color: var(--white);
+    border-radius: 5px;
+
+    h6{
+      color: var(--blue);
+    font-size: var(--fs-20);
+    font-weight: 500;
+    }
+    hr{
+      border-color: #F2F2F2;
+    border-width: 2px;
+    margin: 8px 0;
+    }
+}
+
+// =======================================================
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .job_info_box {
+    min-height: 115px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .job_info_box {
+    min-height: 115px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .job_info_box {
+    min-height: 115px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .job_info_box {
+    min-height: 115px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .create_job_offcanvas {
+    .offcanvas {
+      .btn-close {
+        position: unset;
+      }
+    }
+    
+  }
+}
